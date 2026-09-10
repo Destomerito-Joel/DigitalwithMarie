@@ -3,39 +3,30 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
+  srcDir: 'app/',
+
   // Nuxt compatibility date
   compatibilityDate: "2025-07-15",
 
   // Nuxt modules
   modules: [
     "@nuxtjs/tailwindcss", // TailwindCSS
-    "@pinia/nuxt"          // Pinia store
+    "@pinia/nuxt",         // Pinia store
+    "@nuxt/fonts",
+    "@nuxt/image"
   ],
 
   // Global CSS
   css: [
-    "primeicons/primeicons.css" // PrimeIcons
+    "primeicons/primeicons.css",
+    "~/assets/css/main.css"
   ],
 
-  // Google Fonts
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: ''
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap'
-        }
-      ]
-    }
+  fonts: {
+    families: [
+      { name: 'Playfair Display', weights: [400, 500, 600, 700] },
+      { name: 'Inter', weights: [400, 500, 600, 700] },
+    ],
   },
 
   // Runtime config
@@ -65,8 +56,5 @@ export default defineNuxtConfig({
   // TypeScript settings
   typescript: {
     includeWorkspace: true
-  },
-  routeRules: {
-    "/**": { middleware: ["mobile-only"] }
   }
 });

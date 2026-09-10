@@ -1,10 +1,11 @@
-<template>
-  <div>
-    <header class="p-4 bg-silk-base-200 dark:bg-abyss-base-200 text-silk-base-content dark:text-abyss-base-content">
-      My App
-    </header>
+<script setup lang="ts">
+import Header from '~/components/landing/Header.vue'
+</script>
 
-    <main>
+<template>
+  <div class="min-h-screen bg-ivory text-charcoal">
+    <Header />
+    <main class="pb-20 md:pb-0">
       <slot />
     </main>
   </div>
