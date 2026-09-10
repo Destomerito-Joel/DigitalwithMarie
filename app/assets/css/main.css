@@ -85,12 +85,9 @@ a {
 .hero-ready .hero-eyebrow:not(.hero-mounted),
 .hero-ready .hero-heading:not(.hero-mounted),
 .hero-ready .hero-subcopy:not(.hero-mounted),
-.hero-ready .hero-cta:not(.hero-mounted) {
-  transform: translateX(-32px);
-}
-
+.hero-ready .hero-cta:not(.hero-mounted),
 .hero-ready .hero-visual:not(.hero-mounted) {
-  transform: translateX(32px);
+  transform: translateX(-48px);
 }
 
 .hero-ready .hero-eyebrow { transition-delay: 0ms; }
