@@ -3,7 +3,7 @@ import { objections } from '~/content/objections'
 </script>
 
 <template>
-  <section class="bg-white" aria-labelledby="objections-heading">
+  <section class="bg-background" aria-labelledby="objections-heading">
     <div class="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:px-12 lg:py-32">
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Before you decide</p>

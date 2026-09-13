@@ -3,7 +3,7 @@ import { CHECKOUT_URL } from '~/constants/checkout'
 </script>
 
 <template>
-  <section id="problem" class="bg-white" aria-labelledby="problem-heading">
+  <section id="problem" class="bg-background" aria-labelledby="problem-heading">
     <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-12 lg:py-32">
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">The real bottleneck</p>

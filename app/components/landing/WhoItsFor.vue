@@ -1,12 +1,12 @@
 <template>
-  <section class="bg-white" aria-labelledby="fit-heading">
+  <section class="bg-background" aria-labelledby="fit-heading">
     <div class="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
       <div class="max-w-2xl">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Is this for you?</p>
         <h2 id="fit-heading" class="mt-5 font-serif text-4xl leading-tight tracking-[-0.02em] sm:text-5xl">Built for people ready to turn knowledge into something useful.</h2>
       </div>
       <div class="mt-14 grid gap-6 lg:grid-cols-2">
-        <div class="border border-charcoal/10 bg-[#f7f4ee] p-7 sm:p-10">
+        <div class="border border-border bg-surface p-7 sm:p-10">
           <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">For you if</p>
           <ul class="mt-8 grid gap-4 text-base leading-6 text-charcoal/70 sm:grid-cols-2">
             <li>you have an idea but do not know where to start</li>

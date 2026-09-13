@@ -6,7 +6,7 @@ import ResourceCard from '~/components/landing/ResourceCard.vue'
 </script>
 
 <template>
-  <section id="included" class="bg-white" aria-labelledby="resources-heading">
+  <section id="included" class="bg-background" aria-labelledby="resources-heading">
     <div class="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
       <div class="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
         <div class="max-w-2xl">

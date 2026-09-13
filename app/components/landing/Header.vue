@@ -36,7 +36,7 @@ onMounted(() => {
 <template>
   <header
     class="sticky top-0 z-50 border-b border-transparent transition-[background-color,box-shadow,border-color] duration-200"
-    :class="isScrolled ? 'border-charcoal/10 bg-ivory/90 shadow-sm backdrop-blur-sm' : 'bg-transparent'"
+    :class="isScrolled ? 'border-border/70 bg-background/90 shadow-sm backdrop-blur-sm' : 'bg-transparent'"
   >
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
       <a class="font-serif text-xl font-semibold tracking-[-0.02em]" href="#top" @click="ui.closeMobileNav">
@@ -53,7 +53,7 @@ onMounted(() => {
           {{ item.label }}
         </a>
         <a
-          class="cta-button rounded-full bg-charcoal px-5 py-3 text-sm font-semibold text-white hover:bg-charcoal/90"
+          class="cta-button rounded-full bg-card px-5 py-3 text-sm font-semibold text-text hover:bg-card/90"
           :href="CHECKOUT_URL"
         >
           Get the system
@@ -69,8 +69,8 @@ onMounted(() => {
         @click="ui.toggleMobileNav"
       >
         <span class="flex w-5 flex-col gap-1.5" aria-hidden="true">
-          <span class="h-px w-full bg-charcoal" />
-          <span class="h-px w-full bg-charcoal" />
+          <span class="h-px w-full bg-text" />
+          <span class="h-px w-full bg-text" />
         </span>
       </button>
     </div>
@@ -79,7 +79,7 @@ onMounted(() => {
       <nav
         v-if="ui.isMobileNavOpen"
         id="mobile-navigation"
-        class="border-t border-charcoal/10 bg-ivory px-5 pb-5 pt-3 md:hidden"
+        class="border-t border-border/70 bg-background px-5 pb-5 pt-3 md:hidden"
         aria-label="Mobile navigation"
       >
         <a
@@ -92,7 +92,7 @@ onMounted(() => {
           {{ item.label }}
         </a>
         <a
-          class="cta-button mt-4 block rounded-full bg-charcoal px-5 py-3 text-center text-sm font-semibold text-white hover:bg-charcoal/90"
+          class="cta-button mt-4 block rounded-full bg-card px-5 py-3 text-center text-sm font-semibold text-text hover:bg-card/90"
           :href="CHECKOUT_URL"
           @click="ui.closeMobileNav"
         >
@@ -103,7 +103,7 @@ onMounted(() => {
 
   </header>
 
-  <div class="fixed inset-x-0 bottom-0 z-50 border-t border-charcoal/10 bg-ivory/95 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-sm md:hidden">
+  <div class="fixed inset-x-0 bottom-0 z-50 border-t border-border/70 bg-background/95 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-sm md:hidden">
       <a
         class="cta-button block rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-white hover:bg-accent/90"
         :href="CHECKOUT_URL"

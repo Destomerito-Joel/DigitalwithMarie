@@ -1,2 +1,1 @@
-// <!-- TODO(marie): final CHECKOUT_URL -->
-export const CHECKOUT_URL = '#checkout-placeholder'
+export const CHECKOUT_URL = 'https://selar.com/7o94c14zc5'

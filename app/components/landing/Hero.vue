@@ -5,7 +5,7 @@ const sequence = ['Research', 'Validate', 'Create', 'Package', 'Position', 'Funn
 </script>
 
 <template>
-  <section class="overflow-hidden bg-ivory" aria-labelledby="hero-heading">
+  <section class="overflow-hidden bg-background" aria-labelledby="hero-heading">
     <div class="mx-auto grid min-h-[calc(100vh-81px)] max-w-7xl items-center gap-16 px-5 pb-32 pt-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-24">
       <div class="max-w-3xl">
         <p class="hero-motion hero-eyebrow mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-accent">The complete digital product system</p>
@@ -28,8 +28,8 @@ const sequence = ['Research', 'Validate', 'Create', 'Package', 'Position', 'Funn
           <div
             v-for="(step, index) in sequence"
             :key="step"
-            class="flex aspect-square flex-col justify-between border border-charcoal/10 bg-white p-4 shadow-[0_12px_30px_rgba(30,30,28,0.06)] sm:p-5"
-            :class="index === 4 ? 'bg-charcoal text-white' : ''"
+            class="flex aspect-square flex-col justify-between border border-border bg-card p-4 shadow-[0_12px_30px_rgba(21,22,27,0.35)] sm:p-5"
+            :class="index === 4 ? 'bg-surface text-text' : ''"
           >
             <span class="font-serif text-2xl" :class="index === 4 ? 'text-accent' : 'text-accent/70'">0{{ index + 1 }}</span>
             <span class="text-sm font-semibold sm:text-base">{{ step }}</span>

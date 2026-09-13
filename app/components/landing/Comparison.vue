@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section ref="section" class="bg-[#efebe3]" aria-labelledby="comparison-heading">
+  <section ref="section" class="bg-surface" aria-labelledby="comparison-heading">
     <div class="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
       <div class="max-w-2xl">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Why this is different</p>
@@ -22,11 +22,11 @@ onMounted(() => {
       </div>
       <FadeUp :delay="80">
         <div class="comparison-visual mt-14 grid gap-4 md:grid-cols-2" :class="{ 'comparison-ready': hasMounted, 'system-visible': hasMounted && isVisible }" aria-label="From scattered tutorials to an ordered system">
-          <div class="relative min-h-64 overflow-hidden border border-charcoal/10 bg-white p-6">
+          <div class="relative min-h-64 overflow-hidden border border-border bg-card p-6">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-charcoal/45">Scattered tutorials</p>
-            <span v-for="(label, index) in chaosLabels" :key="label" class="chaos-label absolute border border-charcoal/15 bg-[#f7f4ee] px-3 py-2 text-xs text-charcoal/60" :class="`chaos-label-${index + 1}`">{{ label }}</span>
+            <span v-for="(label, index) in chaosLabels" :key="label" class="chaos-label absolute border border-border bg-background px-3 py-2 text-xs text-muted" :class="`chaos-label-${index + 1}`">{{ label }}</span>
           </div>
-          <div class="relative min-h-64 overflow-hidden bg-charcoal p-6 text-white">
+          <div class="relative min-h-64 overflow-hidden bg-card p-6 text-text">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">The complete system</p>
             <span v-for="label in systemLabels" :key="label" class="system-label flex items-center gap-3 border-b border-white/15 py-3 text-sm font-medium">
               <span class="font-serif text-accent">→</span>{{ label }}
@@ -34,7 +34,7 @@ onMounted(() => {
           </div>
         </div>
       </FadeUp>
-      <div class="mt-14 overflow-hidden border border-charcoal/10 bg-white">
+      <div class="mt-14 overflow-hidden border border-border bg-card">
         <div class="grid grid-cols-[1fr_1fr] border-b border-charcoal/10 text-sm font-semibold sm:grid-cols-[1fr_1fr_1fr]">
           <div class="p-5 sm:p-7">Random tutorials</div>
           <div class="border-l border-charcoal/10 p-5 text-accent sm:p-7">The complete system</div>

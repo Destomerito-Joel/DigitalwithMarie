@@ -12,7 +12,7 @@ const process = [
 </script>
 
 <template>
-  <section id="system" class="bg-[#efebe3]" aria-labelledby="process-heading">
+  <section id="system" class="bg-surface" aria-labelledby="process-heading">
     <div class="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:px-12 lg:py-32">
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">How it works</p>
@@ -36,7 +36,7 @@ const process = [
 }
 
 .process-list :deep(.fade-up:not(:last-child)::after) {
-  background: #c96f55;
+  background: #3c5dfc;
   content: '';
   height: 1.5rem;
   left: 1rem;

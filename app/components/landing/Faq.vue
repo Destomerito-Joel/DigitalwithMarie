@@ -6,7 +6,7 @@ const openFaq = ref<number | null>(null)
 </script>
 
 <template>
-  <section id="faqs" class="bg-white" aria-labelledby="faq-heading">
+  <section id="faqs" class="bg-background" aria-labelledby="faq-heading">
     <div class="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:px-12 lg:py-32">
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">FAQs</p>

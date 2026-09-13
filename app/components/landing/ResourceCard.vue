@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <article class="group border border-charcoal/10 bg-white p-4 transition-transform hover:-translate-y-1 sm:p-5">
+  <article class="group border border-border bg-card p-4 transition-transform hover:-translate-y-1 sm:p-5">
     <div class="flex aspect-[4/3] flex-col justify-between p-5 text-white sm:p-6" :class="resource.accent">
       <div class="flex items-start justify-between gap-4">
         <span class="font-serif text-3xl">{{ resource.number }}</span>

@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-[#efebe3]" aria-labelledby="founder-heading">
+  <section class="bg-surface" aria-labelledby="founder-heading">
     <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center lg:px-12 lg:py-32">
-      <div class="flex aspect-square max-w-sm items-end bg-charcoal p-7 text-white sm:p-10">
+      <div class="flex aspect-square max-w-sm items-end bg-card p-7 text-text sm:p-10">
         <div>
           <p class="font-serif text-4xl">DigitalwithMarie</p>
           <p class="mt-3 text-sm text-white/55">A practical approach to building digital products.</p>
